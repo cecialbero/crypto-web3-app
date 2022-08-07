@@ -1,23 +1,11 @@
-import { FC, useState } from 'react'
+import { useState } from 'react'
 
 import Image from 'next/image'
 import { HiMenuAlt4 } from 'react-icons/hi'
 import { AiOutlineClose } from 'react-icons/ai'
 
-import logo from '../public/images/logo.png'
-
-type NavbarItemsProps = {
-    title: string;
-    classProps?: string
-}
-
-const NavbarItems: FC<NavbarItemsProps> = ({ title, classProps }) => {
-    return (
-        <li className={`mx-4 cursor-pointer ${classProps}`}>
-            {title}
-        </li>
-    )
-}
+import NavbarItems from './NavBarItems'
+import logo from '../../public/images/logo.png'
 
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false)
