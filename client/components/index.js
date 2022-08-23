@@ -5,5 +5,5 @@ export { default as Welcome } from './Welcome';
 export { default as Transactions } from './Transactions';
 export { default as Services } from './Services';
 export { default as Input } from './Input';
-export { default as ServiceCard } from './ServiceCard'
-export { default as TransactionsCard } from './TransactionsCard'
+export { default as ServiceCard } from './Services/ServiceCard';
+export { default as TransactionsCard } from './Transactions/TransactionsCard';
